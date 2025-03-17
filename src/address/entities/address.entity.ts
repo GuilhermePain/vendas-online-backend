@@ -20,9 +20,6 @@ export class AddressEntity {
     @Column({ name: 'city_id', nullable: false })
     cityId: number;
 
-    @Column({ name: 'type_user', nullable: false })
-    typeUser: number;
-
     @CreateDateColumn({ name: 'created_at' })
     createdAt: Date;
 
