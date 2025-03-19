@@ -13,6 +13,8 @@ export class AddressService {
     ) { }
 
     async createAddress(createAddressDto: CreateAddressDto, userId: number): Promise<AddressEntity> {
+        console.log(createAddressDto);
+
         return this.addressRepository.save({
             ...createAddressDto,
             userId

@@ -8,7 +8,7 @@ export class CreateTableAddress1741874318149 implements MigrationInterface {
                 id integer NOT NULL,
                 user_id integer NOT NULL,
                 complement character varying,
-                number_address integer NOT NULL,
+                number integer NOT NULL,
                 cep character varying NOT NULL,
                 city_id integer NOT NULL,
                 created_at timestamp without time zone DEFAULT now() NOT NULL,
